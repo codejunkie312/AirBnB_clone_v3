@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ holds class User"""
-import base64
-import bcrypt
+# import base64
+# import bcrypt
 import models
 from models.base_model import BaseModel, Base
 from os import getenv
@@ -28,10 +28,10 @@ class User(BaseModel, Base):
 
     def __init__(self, *args, **kwargs):
         """initializes user"""
-        if "password" in kwargs:
-            password = kwargs["password"]
-            salt = bcrypt.gensalt()
-            password = bcrypt.hashpw(password.encode('utf-8'), salt)
-            password = base64.b64encode(password).decode('utf-8')
-            kwargs["password"] = password
+        # if "password" in kwargs:
+        #     password = kwargs["password"]
+        #     salt = bcrypt.gensalt()
+        #     password = bcrypt.hashpw(password.encode('utf-8'), salt)
+        #     password = base64.b64encode(password).decode('utf-8')
+        #     kwargs["password"] = password
         super().__init__(*args, **kwargs)
