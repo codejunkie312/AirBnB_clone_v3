@@ -33,7 +33,7 @@ List of commands this console current supports:
 * `EOF` - exits console 
 * `quit` - exits console
 * `<emptyline>` - overwrites default emptyline method and does nothing
-* `create` - Creates a new instance of`BaseModel`, saves it (to the JSON file) and prints the id in the case of db storage instances need to instantiated with the non nullable values example `create State name="Texas"` or `create State name="New_York"` in case of a string value that has space you need to use underscore instead of space and in apostrophies
+* `create` - Creates a new instance of`BaseModel`, saves it (to the JSON file) and prints the id
 * `destroy` - Deletes an instance based on the class name and id (save the change into the JSON file). 
 * `show` - Prints the string representation of an instance based on the class name and id.
 * `all` - Prints all string representation of all instances based or not on the class name. 
